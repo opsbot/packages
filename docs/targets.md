@@ -2,6 +2,7 @@
 ## Makefile Targets
 ```text
 amtool                    0.21.0     Tool for interacting with the Alertmanager API
+antibody                  6.1.1      The fastest shell plugin manager.
 argocd                    1.8.1      Declarative GitOpts for Kubernetes
 assume-role               0.3.2      Easily assume AWS roles in your terminal.
 atlantis                  0.15.1     Terraform For Teams
@@ -33,9 +34,11 @@ github-commenter          0.8.0      Command line utility for creating GitHub co
 github-release            0.9.0      Commandline app to create and edit releases on Github (and upload artifacts)
 github-status-updater     0.5.0      Command line utility for updating GitHub commit statuses and enabling required status checks for pull requests
 gitleaks                  1.2.0      Audit git repos for secrets 🔑
+migrate                   4.14.1     Database migrations. CLI and Golang library.
 gomplate                  3.8.0      A flexible commandline tool for template rendering. Supports lots of local and remote datasources.
 gonsul                    0.2.1      A stand-alone alternative to git2consul 
 goofys                    0.24.0     a high-performance, POSIX-ish Amazon S3 file system written in Go
+goreleaser                0.147.2    Deliver Go binaries as fast and easily as possible
 gosu                      1.12.0     Simple Go-based setuid+setgid+setgroups+exec
 gotop                     3.0.0      A terminal based graphical activity monitor inspired by gtop and vtop
 grpcurl                   1.7.0      Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers
@@ -44,6 +47,7 @@ helm2                     2.17.0     The Kubernetes Package Manager
 helm3                     3.4.2      The Kubernetes Package Manager
 helmfile                  0.135.0    Deploy Kubernetes Helm Charts
 htmltest                  0.13.0     :white_check_mark: Test generated HTML for problems
+hub                       2.14.2     A command-line tool that makes git easier to use with GitHub
 hugo                      0.79.0     The world’s fastest framework for building websites.
 jp                        0.1.3      Command line interface to JMESPath
 jq                        1.6.0      Command-line JSON processor
@@ -71,6 +75,7 @@ kubectx                   0.9.1      Switch faster between clusters and namespac
 kubens                    0.9.1      Switch faster between clusters and namespaces in kubectl
 kubeval                   0.15.0     Validate your Kubernetes configuration files, supports multiple Kubernetes versions
 lazydocker                0.10.0     The lazier way to manage everything docker
+lazygit                   0.23.7     simple terminal UI for git commands
 lectl                     0.21.0     Script to check issued certificates by Let's Encrypt on CTL (Certificate Transparency Log) using https://crt.sh
 minikube                  1.15.1     Run Kubernetes locally
 misspell                  0.3.4      Correct commonly misspelled English words in source files
@@ -110,6 +115,8 @@ terraform-0.13            0.13.5     Terraform is a tool for building, changing,
 terraform-0.14            0.14.2     Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
 terraform-config-inspect  0.0.20201102131242+git0c45ba392e51 A helper library for shallow inspection of Terraform configurations
 terraform-docs            0.10.1     Generate docs from terraform modules
+terraform-inventory       0.9        Terraform State → Ansible Dynamic Inventory
+terraform-provider-mailgunv3 0.2.2      mailgun provider for terraform based on v3 of the api
 terraform_0.11            0.11.14    Terraform (Deprecated package. Use terraform-0.11 instead)
 terraform_0.12            0.12.29    Terraform (Deprecated package. Use terraform-0.12 instead)
 terraform_0.13            0.13.5     Terraform (Deprecated package. Use terraform-0.13 instead)

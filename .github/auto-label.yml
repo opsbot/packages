@@ -23,6 +23,9 @@ scripts:
 vendor/amtool:
 - any: ["vendor/amtool/**"]
   all: ["!bin/**", "!tasks/**"]
+vendor/antibody:
+- any: ["vendor/antibody/**"]
+  all: ["!bin/**", "!tasks/**"]
 vendor/argocd:
 - any: ["vendor/argocd/**"]
   all: ["!bin/**", "!tasks/**"]
@@ -116,6 +119,9 @@ vendor/github-status-updater:
 vendor/gitleaks:
 - any: ["vendor/gitleaks/**"]
   all: ["!bin/**", "!tasks/**"]
+vendor/golang-migrate:
+- any: ["vendor/golang-migrate/**"]
+  all: ["!bin/**", "!tasks/**"]
 vendor/gomplate:
 - any: ["vendor/gomplate/**"]
   all: ["!bin/**", "!tasks/**"]
@@ -124,6 +130,9 @@ vendor/gonsul:
   all: ["!bin/**", "!tasks/**"]
 vendor/goofys:
 - any: ["vendor/goofys/**"]
+  all: ["!bin/**", "!tasks/**"]
+vendor/goreleaser:
+- any: ["vendor/goreleaser/**"]
   all: ["!bin/**", "!tasks/**"]
 vendor/gosu:
 - any: ["vendor/gosu/**"]
@@ -148,6 +157,9 @@ vendor/helmfile:
   all: ["!bin/**", "!tasks/**"]
 vendor/htmltest:
 - any: ["vendor/htmltest/**"]
+  all: ["!bin/**", "!tasks/**"]
+vendor/hub:
+- any: ["vendor/hub/**"]
   all: ["!bin/**", "!tasks/**"]
 vendor/hugo:
 - any: ["vendor/hugo/**"]
@@ -229,6 +241,9 @@ vendor/kubeval:
   all: ["!bin/**", "!tasks/**"]
 vendor/lazydocker:
 - any: ["vendor/lazydocker/**"]
+  all: ["!bin/**", "!tasks/**"]
+vendor/lazygit:
+- any: ["vendor/lazygit/**"]
   all: ["!bin/**", "!tasks/**"]
 vendor/lectl:
 - any: ["vendor/lectl/**"]
@@ -343,6 +358,12 @@ vendor/terraform-config-inspect:
   all: ["!bin/**", "!tasks/**"]
 vendor/terraform-docs:
 - any: ["vendor/terraform-docs/**"]
+  all: ["!bin/**", "!tasks/**"]
+vendor/terraform-inventory:
+- any: ["vendor/terraform-inventory/**"]
+  all: ["!bin/**", "!tasks/**"]
+vendor/terraform-provider-mailgunv3:
+- any: ["vendor/terraform-provider-mailgunv3/**"]
   all: ["!bin/**", "!tasks/**"]
 vendor/terraform:
 - any: ["vendor/terraform/**"]

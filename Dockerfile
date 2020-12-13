@@ -6,7 +6,19 @@ FROM alpine:3.12
 ENV INSTALL_PATH=/packages/bin
 ENV PATH=${INSTALL_PATH}:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 RUN mkdir -p ${INSTALL_PATH}
-RUN apk add --update --no-cache bash make curl coreutils libc6-compat tar xz jq sudo go
+
+# # Use TLS for alpine default repos
+# RUN sed -i 's|http://dl-cdn.alpinelinux.org|https://alpine.global.ssl.fastly.net|g' /etc/apk/repositories && \
+#     echo "@community https://alpine.global.ssl.fastly.net/alpine/v3.12/community" >> /etc/apk/repositories && \
+#     echo "@testing https://alpine.global.ssl.fastly.net/alpine/edge/testing" >> /etc/apk/repositories
+
+# copy apk packages manifest
+COPY packages.txt /etc/apk/packages.txt
+
+# install apk packages from manifest
+RUN apk update && \
+    apk add --no-cache $(grep -v '^#' /etc/apk/packages.txt) && \
+    rm -f /tmp/* /etc/apk/cache/*
 
 COPY --from=cfssl /go/bin/ ${INSTALL_PATH}/
 

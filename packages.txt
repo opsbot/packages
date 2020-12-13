@@ -1,0 +1,10 @@
+bash 
+coreutils 
+curl 
+go
+libc6-compat 
+make 
+tar 
+xz 
+jq
+sudo
